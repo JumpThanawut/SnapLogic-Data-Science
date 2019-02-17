@@ -1,1 +1,0 @@
-# SnapLogic-Data-Science
