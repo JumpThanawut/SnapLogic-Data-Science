@@ -1,0 +1,10 @@
+[
+  {
+    "correlation_coefficient" : 0.7058428998651257,
+    "mean_absolute_error" : 44.25601140616867,
+    "root_mean_squared_error" : 54.55507952705844,
+    "relative_absolute_error" : 0.6721477270273413,
+    "root_relative_squared_error" : 0.7073065408329685,
+    "total_number_of_instances" : 442.0
+  }
+]
