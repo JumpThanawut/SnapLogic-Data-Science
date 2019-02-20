@@ -2,34 +2,34 @@
     "class_id": "com-snaplogic-pipeline",
     "class_version": 8,
     "link_map": {
-        "link102": {
-            "dst_id": "11111111-1111-1111-1111-000000000001",
+        "link100": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_id": "11111111-1111-1111-1111-000000000000",
             "src_view_id": "output0"
         },
-        "link110": {
+        "link113": {
             "dst_id": "11111111-1111-1111-1111-000000000005",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000003",
             "src_view_id": "output0"
         },
-        "link111": {
-            "dst_id": "11111111-1111-1111-1111-000000000002",
-            "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000004",
-            "src_view_id": "output0"
-        },
-        "link112": {
+        "link114": {
             "dst_id": "11111111-1111-1111-1111-000000000004",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000005",
             "src_view_id": "output0"
         },
-        "link113": {
-            "dst_id": "11111111-1111-1111-1111-000000000003",
+        "link115": {
+            "dst_id": "11111111-1111-1111-1111-000000000001",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_view_id": "output0"
+        },
+        "link116": {
+            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000004",
             "src_view_id": "output0"
         }
     },
@@ -77,6 +77,42 @@
         "detail_map": {
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
+                "grid_x_int": 1,
+                "grid_y_int": 1,
+                "index": 0,
+                "input": {},
+                "output": {},
+                "recommendation_id": "2b268b87-a019-45c0-9484-d48339be0d3c",
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "iris placeholder"
+            },
+            "11111111-1111-1111-1111-000000000001": {
+                "error": {},
+                "grid_x_int": 6,
+                "grid_y_int": 1,
+                "index": 0,
+                "input": {},
+                "output": {},
+                "recommendation_id": "8f53c2a3-1347-4f56-8233-eb4ef5b01d6a",
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "iris panel"
+            },
+            "11111111-1111-1111-1111-000000000002": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 1,
+                "index": 0,
+                "input": {},
+                "output": {},
+                "recommendation_id": "b52d21e7-2e89-405d-9aca-8037d4ba9c57_0",
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "iris placeholder"
+            },
+            "11111111-1111-1111-1111-000000000003": {
+                "error": {},
                 "grid_x_int": 2,
                 "grid_y_int": 1,
                 "index": null,
@@ -85,47 +121,11 @@
                 "recommendation_id": null,
                 "rot_int": 0,
                 "rot_tail_int": 0,
-                "source": ""
-            },
-            "11111111-1111-1111-1111-000000000001": {
-                "error": {},
-                "grid_x_int": 7,
-                "grid_y_int": 1,
-                "index": null,
-                "input": {},
-                "output": {},
-                "recommendation_id": null,
-                "rot_int": 0,
-                "rot_tail_int": 0,
-                "source": ""
-            },
-            "11111111-1111-1111-1111-000000000002": {
-                "error": {},
-                "grid_x_int": 6,
-                "grid_y_int": 1,
-                "index": null,
-                "input": {},
-                "output": {},
-                "recommendation_id": null,
-                "rot_int": 0,
-                "rot_tail_int": 0,
-                "source": ""
-            },
-            "11111111-1111-1111-1111-000000000003": {
-                "error": {},
-                "grid_x_int": 3,
-                "grid_y_int": 1,
-                "index": null,
-                "input": {},
-                "output": {},
-                "recommendation_id": null,
-                "rot_int": 0,
-                "rot_tail_int": 0,
-                "source": ""
+                "source": "snap catagory"
             },
             "11111111-1111-1111-1111-000000000004": {
                 "error": {},
-                "grid_x_int": 5,
+                "grid_x_int": 4,
                 "grid_y_int": 1,
                 "index": null,
                 "input": {},
@@ -137,7 +137,7 @@
             },
             "11111111-1111-1111-1111-000000000005": {
                 "error": {},
-                "grid_x_int": 4,
+                "grid_x_int": 3,
                 "grid_y_int": 1,
                 "index": null,
                 "input": {},
@@ -145,7 +145,7 @@
                 "recommendation_id": null,
                 "rot_int": 0,
                 "rot_tail_int": 0,
-                "source": ""
+                "source": "snap catagory"
             }
         },
         "pan_x_num": 0,
@@ -179,7 +179,7 @@
                 },
                 "info": {
                     "label": {
-                        "value": "Read Diabetes Train Set"
+                        "value": "Read Iris Dataset"
                     },
                     "notes": {
                         "value": null
@@ -204,7 +204,7 @@
                     },
                     "filePath": {
                         "expression": false,
-                        "value": "https://raw.githubusercontent.com/JumpThanawut/dataset/master/diabetes/diabetes_train.csv"
+                        "value": "https://raw.githubusercontent.com/JumpThanawut/dataset/master/iris/iris_shuffled.csv"
                     },
                     "preventURLEncoding": {
                         "value": false
@@ -239,7 +239,7 @@
                 },
                 "info": {
                     "label": {
-                        "value": "Write Model"
+                        "value": "Write CV Result"
                     },
                     "notes": {
                         "value": null
@@ -270,7 +270,7 @@
                     },
                     "filename": {
                         "expression": false,
-                        "value": "diabetes_model.json"
+                        "value": "iris_cross_validation_result.json"
                     },
                     "flushIntervalKb": {
                         "value": -1
@@ -450,7 +450,7 @@
             }
         },
         "11111111-1111-1111-1111-000000000004": {
-            "class_id": "com-snaplogic-snaps-mlcore-trainerregression",
+            "class_id": "com-snaplogic-snaps-mlcore-crossvalidatorclassification",
             "class_version": 1,
             "instance_id": "11111111-1111-1111-1111-000000000004",
             "property_map": {
@@ -469,7 +469,7 @@
                 },
                 "info": {
                     "label": {
-                        "value": "Trainer (Classification)"
+                        "value": "Cross Validator (Classification)"
                     },
                     "notes": {
                         "value": null
@@ -498,17 +498,25 @@
                 "settings": {
                     "algorithmExpression": {
                         "expression": false,
-                        "value": "Linear Regression"
+                        "value": "Decision Tree"
                     },
-                    "isReadable": {
+                    "applySeed": {
                         "value": true
                     },
+                    "foldExpression": {
+                        "expression": false,
+                        "value": 10
+                    },
                     "labelFieldJsonPath": {
-                        "value": "$Y"
+                        "value": "$class"
                     },
                     "optionsExpression": {
                         "expression": false,
                         "value": null
+                    },
+                    "seedExpression": {
+                        "expression": false,
+                        "value": 12345
                     }
                 },
                 "view_serial": 100

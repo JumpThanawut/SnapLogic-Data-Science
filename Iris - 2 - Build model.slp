@@ -2,34 +2,34 @@
     "class_id": "com-snaplogic-pipeline",
     "class_version": 8,
     "link_map": {
-        "link102": {
+        "link101": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_view_id": "output0"
+        },
+        "link104": {
             "dst_id": "11111111-1111-1111-1111-000000000001",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000002",
             "src_view_id": "output0"
         },
-        "link110": {
+        "link108": {
             "dst_id": "11111111-1111-1111-1111-000000000005",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000003",
             "src_view_id": "output0"
         },
-        "link111": {
+        "link109": {
             "dst_id": "11111111-1111-1111-1111-000000000002",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000004",
             "src_view_id": "output0"
         },
-        "link112": {
+        "link110": {
             "dst_id": "11111111-1111-1111-1111-000000000004",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000005",
-            "src_view_id": "output0"
-        },
-        "link113": {
-            "dst_id": "11111111-1111-1111-1111-000000000003",
-            "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000000",
             "src_view_id": "output0"
         }
     },
@@ -91,13 +91,13 @@
                 "error": {},
                 "grid_x_int": 7,
                 "grid_y_int": 1,
-                "index": null,
+                "index": 0,
                 "input": {},
                 "output": {},
-                "recommendation_id": null,
+                "recommendation_id": "bd743582-a19a-4f30-b16c-863f6e54c566",
                 "rot_int": 0,
                 "rot_tail_int": 0,
-                "source": ""
+                "source": "iris panel"
             },
             "11111111-1111-1111-1111-000000000002": {
                 "error": {},
@@ -109,7 +109,7 @@
                 "recommendation_id": null,
                 "rot_int": 0,
                 "rot_tail_int": 0,
-                "source": ""
+                "source": "snap catagory"
             },
             "11111111-1111-1111-1111-000000000003": {
                 "error": {},
@@ -179,7 +179,7 @@
                 },
                 "info": {
                     "label": {
-                        "value": "Read Diabetes Train Set"
+                        "value": "Read Iris Train Set"
                     },
                     "notes": {
                         "value": null
@@ -204,7 +204,7 @@
                     },
                     "filePath": {
                         "expression": false,
-                        "value": "https://raw.githubusercontent.com/JumpThanawut/dataset/master/diabetes/diabetes_train.csv"
+                        "value": "https://raw.githubusercontent.com/JumpThanawut/dataset/master/iris/iris_train.csv"
                     },
                     "preventURLEncoding": {
                         "value": false
@@ -270,7 +270,7 @@
                     },
                     "filename": {
                         "expression": false,
-                        "value": "diabetes_model.json"
+                        "value": "iris_model.json"
                     },
                     "flushIntervalKb": {
                         "value": -1
@@ -450,7 +450,7 @@
             }
         },
         "11111111-1111-1111-1111-000000000004": {
-            "class_id": "com-snaplogic-snaps-mlcore-trainerregression",
+            "class_id": "com-snaplogic-snaps-mlcore-trainerclassification",
             "class_version": 1,
             "instance_id": "11111111-1111-1111-1111-000000000004",
             "property_map": {
@@ -498,13 +498,13 @@
                 "settings": {
                     "algorithmExpression": {
                         "expression": false,
-                        "value": "Linear Regression"
+                        "value": "Logistic Regression"
                     },
                     "isReadable": {
                         "value": true
                     },
                     "labelFieldJsonPath": {
-                        "value": "$Y"
+                        "value": "$class"
                     },
                     "optionsExpression": {
                         "expression": false,

@@ -1,0 +1,14 @@
+[
+  {
+    "correctly_classified_instances" : 143.0,
+    "correctly_classified_instances_ratio" : 0.9533333333333333,
+    "incorrectly_classified_instances" : 7.0,
+    "incorrectly_classified_instances_ratio" : 0.04666666666666667,
+    "kappa_statistic" : 0.93,
+    "mean_absolute_error" : 0.04246792954292524,
+    "root_mean_squared_error" : 0.17705820022897942,
+    "relative_absolute_error" : 0.09555284147158202,
+    "root_relative_squared_error" : 0.3755971621397911,
+    "total_number_of_instances" : 150.0
+  }
+]
