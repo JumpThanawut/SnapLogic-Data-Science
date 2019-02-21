@@ -1,0 +1,429 @@
+[
+  {
+    "loan_amnt" : {
+      "mean" : 12861.6375,
+      "min" : 1000,
+      "max" : 35000,
+      "stddev" : 8491.813747437343,
+      "popular" : {
+        "lower" : 1000,
+        "upper" : 7800,
+        "count" : 3357
+      },
+      "uniqueValues" : 643,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : [
+        {
+          "lower" : 1000,
+          "upper" : 7800,
+          "count" : 3357
+        },
+        {
+          "lower" : 7800,
+          "upper" : 14600,
+          "count" : 3191
+        },
+        {
+          "lower" : 14600,
+          "upper" : 21400,
+          "count" : 1909
+        },
+        {
+          "lower" : 21400,
+          "upper" : 28200,
+          "count" : 802
+        },
+        {
+          "lower" : 28200,
+          "upper" : 35000,
+          "count" : 741
+        }
+      ]
+    },
+    "funded_amnt" : {
+      "mean" : 12687.66,
+      "min" : 1000,
+      "max" : 35000,
+      "stddev" : 8271.774836774453,
+      "popular" : {
+        "lower" : 1000,
+        "upper" : 7800,
+        "count" : 3358
+      },
+      "uniqueValues" : 745,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : [
+        {
+          "lower" : 1000,
+          "upper" : 7800,
+          "count" : 3358
+        },
+        {
+          "lower" : 7800,
+          "upper" : 14600,
+          "count" : 3236
+        },
+        {
+          "lower" : 14600,
+          "upper" : 21400,
+          "count" : 1934
+        },
+        {
+          "lower" : 21400,
+          "upper" : 28200,
+          "count" : 819
+        },
+        {
+          "lower" : 28200,
+          "upper" : 35000,
+          "count" : 653
+        }
+      ]
+    },
+    "term" : {
+      "popular" : "36 months",
+      "uniqueValues" : 2,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : {
+        "36 months" : 6649,
+        "60 months" : 3351
+      }
+    },
+    "int_rate" : {
+      "mean" : 12.42772,
+      "min" : 5.42,
+      "max" : 24.11,
+      "stddev" : 4.239564710261331,
+      "popular" : {
+        "lower" : 9.158,
+        "upper" : 12.896,
+        "count" : 3112
+      },
+      "uniqueValues" : 70,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : [
+        {
+          "lower" : 5.42,
+          "upper" : 9.158,
+          "count" : 2767
+        },
+        {
+          "lower" : 9.158,
+          "upper" : 12.896,
+          "count" : 3112
+        },
+        {
+          "lower" : 12.896,
+          "upper" : 16.634,
+          "count" : 2185
+        },
+        {
+          "lower" : 16.634,
+          "upper" : 20.372,
+          "count" : 1605
+        },
+        {
+          "lower" : 20.372,
+          "upper" : 24.110,
+          "count" : 331
+        }
+      ]
+    },
+    "installment" : {
+      "mean" : 363.81508,
+      "min" : 22.24,
+      "max" : 1288.1,
+      "stddev" : 226.20984957339502,
+      "popular" : {
+        "lower" : 22.24,
+        "upper" : 275.412,
+        "count" : 4049
+      },
+      "uniqueValues" : 4298,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : [
+        {
+          "lower" : 22.24,
+          "upper" : 275.412,
+          "count" : 4049
+        },
+        {
+          "lower" : 275.412,
+          "upper" : 528.584,
+          "count" : 3992
+        },
+        {
+          "lower" : 528.584,
+          "upper" : 781.756,
+          "count" : 1309
+        },
+        {
+          "lower" : 781.756,
+          "upper" : 1034.928,
+          "count" : 529
+        },
+        {
+          "lower" : 1034.928,
+          "upper" : 1288.100,
+          "count" : 121
+        }
+      ]
+    },
+    "emp_length" : {
+      "popular" : "10+ years",
+      "uniqueValues" : 11,
+      "missingValues" : 355,
+      "total" : 10000,
+      "valueDistribution" : {
+        "10+ years" : 2548,
+        "2 years" : 987,
+        "3 years" : 904,
+        "< 1 year" : 900,
+        "4 years" : 861,
+        "5 years" : 855,
+        "1 year" : 711,
+        "6 years" : 690,
+        "7 years" : 508,
+        "8 years" : 387
+      }
+    },
+    "home_ownership" : {
+      "popular" : "RENT",
+      "uniqueValues" : 3,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : {
+        "RENT" : 4640,
+        "MORTGAGE" : 4612,
+        "OWN" : 748
+      }
+    },
+    "annual_inc" : {
+      "mean" : 70266.498508,
+      "min" : 6000,
+      "max" : 1782000,
+      "stddev" : 48321.13830493516,
+      "popular" : {
+        "lower" : 6000,
+        "upper" : 361200,
+        "count" : 9977
+      },
+      "uniqueValues" : 1688,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : [
+        {
+          "lower" : 6000,
+          "upper" : 361200,
+          "count" : 9977
+        },
+        {
+          "lower" : 361200,
+          "upper" : 716400,
+          "count" : 19
+        },
+        {
+          "lower" : 716400,
+          "upper" : 1071600,
+          "count" : 3
+        },
+        {
+          "lower" : 1071600,
+          "upper" : 1426800,
+          "count" : 0
+        },
+        {
+          "lower" : 1426800,
+          "upper" : 1782000,
+          "count" : 1
+        }
+      ]
+    },
+    "verification_status" : {
+      "popular" : "Verified",
+      "uniqueValues" : 3,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : {
+        "Verified" : 3881,
+        "Source Verified" : 3069,
+        "Not Verified" : 3050
+      }
+    },
+    "purpose" : {
+      "popular" : "debt_consolidation",
+      "uniqueValues" : 13,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : {
+        "debt_consolidation" : 5155,
+        "credit_card" : 1503,
+        "other" : 865,
+        "home_improvement" : 630,
+        "small_business" : 439,
+        "major_purchase" : 365,
+        "car" : 298,
+        "wedding" : 217,
+        "medical" : 176,
+        "moving" : 126
+      }
+    },
+    "addr_state" : {
+      "popular" : "CA",
+      "uniqueValues" : 45,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : {
+        "CA" : 1807,
+        "NY" : 943,
+        "FL" : 741,
+        "TX" : 707,
+        "NJ" : 456,
+        "IL" : 404,
+        "PA" : 344,
+        "GA" : 323,
+        "VA" : 316,
+        "OH" : 315
+      }
+    },
+    "grade" : {
+      "popular" : "B",
+      "uniqueValues" : 7,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : {
+        "B" : 3113,
+        "A" : 2765,
+        "C" : 1825,
+        "D" : 1220,
+        "E" : 718,
+        "F" : 292,
+        "G" : 67
+      }
+    },
+    "sub_grade" : {
+      "popular" : "B3",
+      "uniqueValues" : 35,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : {
+        "B3" : 826,
+        "A4" : 785,
+        "B5" : 663,
+        "B4" : 586,
+        "A1" : 565,
+        "B2" : 545,
+        "C1" : 541,
+        "A5" : 522,
+        "C2" : 504,
+        "A2" : 497
+      }
+    },
+    "fico_score" : {
+      "mean" : 715.711,
+      "min" : 662,
+      "max" : 827,
+      "stddev" : 34.847093293287735,
+      "popular" : {
+        "lower" : 695,
+        "upper" : 728,
+        "count" : 3373
+      },
+      "uniqueValues" : 34,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : [
+        {
+          "lower" : 662,
+          "upper" : 695,
+          "count" : 3269
+        },
+        {
+          "lower" : 695,
+          "upper" : 728,
+          "count" : 3373
+        },
+        {
+          "lower" : 728,
+          "upper" : 761,
+          "count" : 2114
+        },
+        {
+          "lower" : 761,
+          "upper" : 794,
+          "count" : 1055
+        },
+        {
+          "lower" : 794,
+          "upper" : 827,
+          "count" : 189
+        }
+      ]
+    },
+    "dti" : {
+      "mean" : 13.990554,
+      "min" : 0,
+      "max" : 29.92,
+      "stddev" : 6.612879465903417,
+      "popular" : {
+        "lower" : 11.968,
+        "upper" : 17.952,
+        "count" : 2971
+      },
+      "uniqueValues" : 2615,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : [
+        {
+          "lower" : 0,
+          "upper" : 5.984,
+          "count" : 1347
+        },
+        {
+          "lower" : 5.984,
+          "upper" : 11.968,
+          "count" : 2598
+        },
+        {
+          "lower" : 11.968,
+          "upper" : 17.952,
+          "count" : 2971
+        },
+        {
+          "lower" : 17.952,
+          "upper" : 23.936,
+          "count" : 2483
+        },
+        {
+          "lower" : 23.936,
+          "upper" : 29.920,
+          "count" : 601
+        }
+      ]
+    },
+    "application_type" : {
+      "popular" : "Individual",
+      "uniqueValues" : 1,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : {
+        "Individual" : 10000
+      }
+    },
+    "loan_status" : {
+      "popular" : "Fully Paid",
+      "uniqueValues" : 2,
+      "missingValues" : 0,
+      "total" : 10000,
+      "valueDistribution" : {
+        "Fully Paid" : 8429,
+        "Charged Off" : 1571
+      }
+    }
+  }
+]

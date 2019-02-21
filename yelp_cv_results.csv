@@ -1,0 +1,8 @@
+"algorithm","accuracy"
+"Decision Tree","0.7813292744799594"
+"K-Nearest Neighbors","0.7077625570776256"
+"Logistic Regression","0.8640284119736176"
+"Naive Bayes","0.6790969051243024"
+"Decision Stump","0.6727549467275494"
+"Random Forests","0.8444951801116184"
+"Support Vector Machines","0.867579908675799"
