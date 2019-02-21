@@ -1,0 +1,6 @@
+algorithm,accuracy
+Decision Tree,0.8447900466562985
+Logistic Regression,0.8438569206842924
+Naive Bayes,0.7591498185588388
+Decision Stump,0.8447900466562985
+Random Forests,0.8344219803006738

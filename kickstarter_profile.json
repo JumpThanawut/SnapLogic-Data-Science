@@ -1,0 +1,450 @@
+[
+  {
+    "category" : {
+      "popular" : "Product Design",
+      "uniqueValues" : 156,
+      "missingValues" : 0,
+      "total" : 17562,
+      "valueDistribution" : {
+        "Product Design" : 963,
+        "Documentary" : 764,
+        "Music" : 648,
+        "Tabletop Games" : 625,
+        "Shorts" : 616,
+        "Food" : 539,
+        "Video Games" : 519,
+        "Film & Video" : 478,
+        "Fiction" : 432,
+        "Fashion" : 402,
+        "Art" : 399,
+        "Nonfiction" : 393,
+        "Theater" : 372,
+        "Rock" : 348,
+        "Children's Books" : 310,
+        "Indie Rock" : 305,
+        "Apparel" : 298,
+        "Technology" : 294,
+        "Photography" : 275,
+        "Webseries" : 266,
+        "Comics" : 266,
+        "Apps" : 256,
+        "Narrative Film" : 249,
+        "Publishing" : 229,
+        "Web" : 224,
+        "Country & Folk" : 218,
+        "Crafts" : 187,
+        "Hip-Hop" : 182,
+        "Public Art" : 170,
+        "Hardware" : 170,
+        "Illustration" : 168,
+        "Design" : 163,
+        "Painting" : 161,
+        "Pop" : 156,
+        "Games" : 152,
+        "Software" : 144,
+        "Accessories" : 144,
+        "Classical Music" : 137,
+        "Comic Books" : 129,
+        "Mixed Media" : 128,
+        "Drinks" : 128,
+        "Art Books" : 127,
+        "Animation" : 124,
+        "Comedy" : 122,
+        "Restaurants" : 116,
+        "Playing Cards" : 114,
+        "Graphic Design" : 113,
+        "Dance" : 111,
+        "World Music" : 109,
+        "Gadgets" : 108,
+        "Performance Art" : 106,
+        "Sculpture" : 93,
+        "Electronic Music" : 92,
+        "Mobile Games" : 89,
+        "Drama" : 88,
+        "Food Trucks" : 87,
+        "Photobooks" : 80,
+        "Jazz" : 79,
+        "Graphic Novels" : 77,
+        "Small Batch" : 74,
+        "Plays" : 72,
+        "Journalism" : 71,
+        "DIY" : 70,
+        "Poetry" : 67,
+        "Jewelry" : 67,
+        "Periodicals" : 65,
+        "Horror" : 60,
+        "Digital Art" : 60,
+        "Woodworking" : 59,
+        "People" : 57,
+        "Farms" : 57,
+        "Conceptual Art" : 54,
+        "Performances" : 51,
+        "Footwear" : 50,
+        "Faith" : 50,
+        "Wearables" : 49,
+        "Festivals" : 48,
+        "Experimental" : 48,
+        "Anthologies" : 48,
+        "Musical" : 46,
+        "Live Games" : 45,
+        "DIY Electronics" : 45,
+        "Television" : 42,
+        "Spaces" : 42,
+        "Architecture" : 42,
+        "Young Adult" : 40,
+        "Music Videos" : 39,
+        "Events" : 39,
+        "Academic" : 39,
+        "Ready-to-wear" : 38,
+        "Thrillers" : 36,
+        "Metal" : 36,
+        "Radio & Podcasts" : 35,
+        "Fine Art" : 35,
+        "Science Fiction" : 32,
+        "Vegan" : 29,
+        "Places" : 29,
+        "3D Printing" : 29,
+        "Robots" : 28,
+        "Action" : 27,
+        "Cookbooks" : 24,
+        "Webcomics" : 23,
+        "Sound" : 23,
+        "R&B" : 23,
+        "Nature" : 22,
+        "Installations" : 22,
+        "Audio" : 22,
+        "Print" : 20,
+        "Immersive" : 20,
+        "Farmer's Markets" : 20,
+        "Fabrication Tools" : 20,
+        "Fantasy" : 19,
+        "Ceramics" : 19,
+        "Camera Equipment" : 19,
+        "Kids" : 18,
+        "Candles" : 18,
+        "Calendars" : 18,
+        "Video" : 17,
+        "Flight" : 17,
+        "Civic Design" : 17,
+        "Zines" : 16,
+        "Stationery" : 16,
+        "Interactive Design" : 16,
+        "Gaming Hardware" : 16,
+        "Community Gardens" : 16,
+        "Childrenswear" : 16,
+        "Animals" : 16,
+        "Literary Journals" : 15,
+        "Punk" : 14,
+        "Movie Theaters" : 14,
+        "Photo" : 13,
+        "Makerspaces" : 13,
+        "Crochet" : 13,
+        "Bacon" : 13,
+        "Printing" : 12,
+        "Video Art" : 11,
+        "Space Exploration" : 11,
+        "Knitting" : 11,
+        "Puzzles" : 10,
+        "Family" : 10,
+        "Blues" : 10,
+        "Workshops" : 9,
+        "Glass" : 9,
+        "Couture" : 9,
+        "Weaving" : 8,
+        "Translations" : 7,
+        "Romance" : 7,
+        "Pottery" : 7,
+        "Pet Fashion" : 7,
+        "Textiles" : 6,
+        "Letterpress" : 5,
+        "Latin" : 4,
+        "Typography" : 3,
+        "Embroidery" : 3,
+        "Quilts" : 2,
+        "Taxidermy" : 1
+      }
+    },
+    "main_category" : {
+      "popular" : "Film & Video",
+      "uniqueValues" : 15,
+      "missingValues" : 0,
+      "total" : 17562,
+      "valueDistribution" : {
+        "Film & Video" : 3027,
+        "Music" : 2432,
+        "Publishing" : 1824,
+        "Games" : 1570,
+        "Technology" : 1397,
+        "Art" : 1397,
+        "Design" : 1317,
+        "Food" : 1147,
+        "Fashion" : 1031,
+        "Theater" : 579,
+        "Comics" : 526,
+        "Photography" : 514,
+        "Crafts" : 420,
+        "Journalism" : 196,
+        "Dance" : 185
+      }
+    },
+    "currency" : {
+      "popular" : "USD",
+      "uniqueValues" : 13,
+      "missingValues" : 0,
+      "total" : 17562,
+      "valueDistribution" : {
+        "USD" : 13768,
+        "GBP" : 1598,
+        "EUR" : 803,
+        "CAD" : 678,
+        "AUD" : 336,
+        "MXN" : 88,
+        "SEK" : 84,
+        "NZD" : 56,
+        "DKK" : 43,
+        "NOK" : 30,
+        "CHF" : 29,
+        "HKD" : 27,
+        "SGD" : 22
+      }
+    },
+    "country" : {
+      "popular" : "US",
+      "uniqueValues" : 22,
+      "missingValues" : 0,
+      "total" : 17562,
+      "valueDistribution" : {
+        "US" : 13756,
+        "GB" : 1596,
+        "CA" : 676,
+        "AU" : 336,
+        "DE" : 181,
+        "IT" : 155,
+        "FR" : 144,
+        "NL" : 120,
+        "ES" : 93,
+        "MX" : 88,
+        "SE" : 84,
+        "NZ" : 56,
+        "DK" : 43,
+        "IE" : 41,
+        "BE" : 36,
+        "NO" : 30,
+        "CH" : 29,
+        "AT" : 29,
+        "HK" : 27,
+        "SG" : 22,
+        "N,0\"" : 16,
+        "LU" : 4
+      }
+    },
+    "launched" : {
+      "mean" : 1408990300.322970048969365675891129,
+      "min" : 1241055175,
+      "max" : 1513977933,
+      "stddev" : 60406397.78607835,
+      "popular" : {
+        "lower" : 1404808829.8,
+        "upper" : 1432101105.6,
+        "count" : 3343
+      },
+      "uniqueValues" : 17560,
+      "missingValues" : 0,
+      "total" : 17562,
+      "valueDistribution" : [
+        {
+          "lower" : 1241055175,
+          "upper" : 1268347450.8,
+          "count" : 101
+        },
+        {
+          "lower" : 1268347450.8,
+          "upper" : 1295639726.6,
+          "count" : 466
+        },
+        {
+          "lower" : 1295639726.6,
+          "upper" : 1322932002.4,
+          "count" : 1150
+        },
+        {
+          "lower" : 1322932002.4,
+          "upper" : 1350224278.2,
+          "count" : 1825
+        },
+        {
+          "lower" : 1350224278.2,
+          "upper" : 1377516554.0,
+          "count" : 1885
+        },
+        {
+          "lower" : 1377516554.0,
+          "upper" : 1404808829.8,
+          "count" : 2057
+        },
+        {
+          "lower" : 1404808829.8,
+          "upper" : 1432101105.6,
+          "count" : 3343
+        },
+        {
+          "lower" : 1432101105.6,
+          "upper" : 1459393381.4,
+          "count" : 2607
+        },
+        {
+          "lower" : 1459393381.4,
+          "upper" : 1486685657.2,
+          "count" : 2178
+        },
+        {
+          "lower" : 1486685657.2,
+          "upper" : 1513977933.0,
+          "count" : 1950
+        }
+      ]
+    },
+    "usd_goal" : {
+      "mean" : 30539.85451941692290171962191094408,
+      "min" : 0.75,
+      "max" : 33000000,
+      "stddev" : 365039.1705865471,
+      "popular" : {
+        "lower" : 0.75,
+        "upper" : 3300000.675,
+        "count" : 17545
+      },
+      "uniqueValues" : 4542,
+      "missingValues" : 0,
+      "total" : 17562,
+      "valueDistribution" : [
+        {
+          "lower" : 0.75,
+          "upper" : 3300000.675,
+          "count" : 17545
+        },
+        {
+          "lower" : 3300000.675,
+          "upper" : 6600000.600,
+          "count" : 7
+        },
+        {
+          "lower" : 6600000.600,
+          "upper" : 9900000.525,
+          "count" : 3
+        },
+        {
+          "lower" : 9900000.525,
+          "upper" : 13200000.450,
+          "count" : 5
+        },
+        {
+          "lower" : 13200000.450,
+          "upper" : 16500000.375,
+          "count" : 0
+        },
+        {
+          "lower" : 16500000.375,
+          "upper" : 19800000.300,
+          "count" : 1
+        },
+        {
+          "lower" : 19800000.300,
+          "upper" : 23100000.225,
+          "count" : 0
+        },
+        {
+          "lower" : 23100000.225,
+          "upper" : 26400000.150,
+          "count" : 0
+        },
+        {
+          "lower" : 26400000.150,
+          "upper" : 29700000.075,
+          "count" : 0
+        },
+        {
+          "lower" : 29700000.075,
+          "upper" : 33000000.000,
+          "count" : 1
+        }
+      ]
+    },
+    "state" : {
+      "popular" : "failed",
+      "uniqueValues" : 2,
+      "missingValues" : 0,
+      "total" : 17562,
+      "valueDistribution" : {
+        "failed" : 10446,
+        "successful" : 7116
+      }
+    },
+    "duration" : {
+      "mean" : 2882342.519530805147477508256462817,
+      "min" : 17781,
+      "max" : 7862112,
+      "stddev" : 1098093.2839367443,
+      "popular" : {
+        "lower" : 2371080.3,
+        "upper" : 3155513.4,
+        "count" : 10417
+      },
+      "uniqueValues" : 17086,
+      "missingValues" : 0,
+      "total" : 17562,
+      "valueDistribution" : [
+        {
+          "lower" : 17781,
+          "upper" : 802214.1,
+          "count" : 283
+        },
+        {
+          "lower" : 802214.1,
+          "upper" : 1586647.2,
+          "count" : 944
+        },
+        {
+          "lower" : 1586647.2,
+          "upper" : 2371080.3,
+          "count" : 1654
+        },
+        {
+          "lower" : 2371080.3,
+          "upper" : 3155513.4,
+          "count" : 10417
+        },
+        {
+          "lower" : 3155513.4,
+          "upper" : 3939946.5,
+          "count" : 1861
+        },
+        {
+          "lower" : 3939946.5,
+          "upper" : 4724379.6,
+          "count" : 483
+        },
+        {
+          "lower" : 4724379.6,
+          "upper" : 5508812.7,
+          "count" : 1721
+        },
+        {
+          "lower" : 5508812.7,
+          "upper" : 6293245.8,
+          "count" : 39
+        },
+        {
+          "lower" : 6293245.8,
+          "upper" : 7077678.9,
+          "count" : 20
+        },
+        {
+          "lower" : 7077678.9,
+          "upper" : 7862112.0,
+          "count" : 140
+        }
+      ]
+    }
+  }
+]

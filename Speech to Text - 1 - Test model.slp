@@ -1,0 +1,286 @@
+{
+    "class_id": "com-snaplogic-pipeline",
+    "class_version": 8,
+    "link_map": {
+        "link100": {
+            "dst_id": "11111111-1111-1111-1111-000000000001",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_view_id": "output0"
+        },
+        "link103": {
+            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000001",
+            "src_view_id": "output0"
+        }
+    },
+    "property_map": {
+        "error": {
+            "error_behavior": {
+                "value": "none"
+            }
+        },
+        "info": {
+            "author": {
+                "value": "jumpthanawut@snaplogic.com"
+            },
+            "label": {},
+            "notes": {
+                "value": null
+            },
+            "pipeline_doc_uri": {
+                "value": null
+            },
+            "purpose": {
+                "value": null
+            }
+        },
+        "input": {},
+        "output": {
+            "11111111-1111-1111-1111-000000000002_output0": {
+                "label": {
+                    "value": "Remote Python Script Snap - output0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            }
+        },
+        "settings": {
+            "error_param_table": {
+                "value": []
+            },
+            "error_pipeline": {
+                "expression": false,
+                "value": null
+            },
+            "imports": {
+                "value": []
+            },
+            "param_table": {
+                "value": []
+            }
+        }
+    },
+    "render_map": {
+        "default_snaplex": null,
+        "detail_map": {
+            "11111111-1111-1111-1111-000000000000": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000001": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000002": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            }
+        },
+        "pan_x_num": 0,
+        "pan_y_num": 0,
+        "scale_ratio": 1
+    },
+    "snap_map": {
+        "11111111-1111-1111-1111-000000000000": {
+            "class_id": "com-snaplogic-snaps-binary-simpleread",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000000",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {}
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "File Reader"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "enableStaging": {
+                        "value": false
+                    },
+                    "executeDuringPreview": {
+                        "value": true
+                    },
+                    "filePath": {
+                        "expression": false,
+                        "value": "https://raw.githubusercontent.com/JumpThanawut/dataset/master/common_voice/sample-000001.mp3"
+                    },
+                    "preventURLEncoding": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000001": {
+            "class_id": "com-snaplogic-snaps-transform-binarytodocument",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Binary to Document"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "codec": {
+                        "value": "ENCODE_BASE64"
+                    },
+                    "ignoreEmptyStream": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000002": {
+            "class_id": "com-snaplogic-snaps-mlcore-remotepythonscript",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {}
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Remote Python Script Snap"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "editable_content": {
+                        "value": "from snaplogic.tool import SLTool as slt\n\n# Ensure libraries.\nslt.ensure(\"pydub\", \"0.23.0\")\nslt.execute(\"apt-get install -y ffmpeg\")\nslt.ensure(\"scipy\", \"1.1.0\")\nslt.ensure(\"tensorflow\", \"1.5.0\")\nslt.ensure(\"deepspeech\", \"0.3.0\")\n\n# Imports\nimport os\nimport base64\nimport requests\nimport tarfile\nimport scipy.io.wavfile as wav\nfrom timeit import default_timer as timer\nfrom pydub import AudioSegment\nfrom deepspeech import Model\n\nBEAM_WIDTH = 500\nLM_WEIGHT = 1.50\nVALID_WORD_COUNT_WEIGHT = 2.10\nN_FEATURES = 26\nN_CONTEXT = 9\n\nMODEL_URL = \"https://github.com/mozilla/DeepSpeech/releases/download/v0.3.0/deepspeech-0.3.0-models.tar.gz\"\nMODEL_ROOT_DIR = \"/tmp/snaplogic_ds_tmp/models/deepspeech/\"\n\n# This function will be executed once before consuming the data.\ndef snaplogic_init():\n    global ds\n    if not os.path.isfile(MODEL_ROOT_DIR + \"models/output_graph.pb\"):\n        if not os.path.exists(MODEL_ROOT_DIR):\n            os.makedirs(MODEL_ROOT_DIR)\n        if not os.path.isfile(MODEL_ROOT_DIR + \"models.tar.gz\"):\n            slt.download_file(MODEL_URL, MODEL_ROOT_DIR + \"models.tar.gz\")\n        model_tar_file = tarfile.open(MODEL_ROOT_DIR + \"models.tar.gz\")\n        model_tar_file.extractall(MODEL_ROOT_DIR)\n        os.remove(MODEL_ROOT_DIR + \"models.tar.gz\")\n    ds = Model(MODEL_ROOT_DIR + \"models/output_graph.pb\",\n                N_FEATURES,\n                N_CONTEXT,\n                MODEL_ROOT_DIR + \"models/alphabet.txt\",\n                BEAM_WIDTH)\n    ds.enableDecoderWithLM(MODEL_ROOT_DIR + \"models/alphabet.txt\",\n                            MODEL_ROOT_DIR + \"models/lm.binary\",\n                            MODEL_ROOT_DIR + \"models/trie\",\n                            LM_WEIGHT,\n                            VALID_WORD_COUNT_WEIGHT)\n    return None\n\n# This function will be executed on each document from the upstream snap.\ndef snaplogic_process(row):\n    try:\n        global ds\n        audio = row[\"content\"]\n        if audio.startswith(\"data:audio\"):\n            audio = audio[23:]\n        audio = base64.b64decode(audio)\n        with open(tmp_root + \"audio\", \"wb\") as audio_file:\n            audio_file.write(audio)\n        del audio\n        \n        sound = AudioSegment.from_file(tmp_root + \"audio\")\n        sound = sound.set_frame_rate(16000)\n        sound = sound.set_sample_width(2)\n        sound = sound.set_channels(1)\n        sound.export(tmp_root + \"audio.wav\", format=\"wav\")\n        \n        fs, audio = wav.read(tmp_root + \"audio.wav\")\n        audio_length = len(audio) * (1 / 16000)\n        \n        if audio_length > 15:\n            return {\"pred\": \"The audio length limit is 15 seconds.\"}\n    \n        inference_start = timer()\n        text = ds.stt(audio, fs)\n        inference_time = timer() - inference_start\n        \n        return {\"pred\": text, \"inference_time\": inference_time, \"audio_length\": audio_length}\n    except:\n       return {\"pred\": \"The request is not valid.\"}\n\n# This function will be executed after consuming all documents from the upstream snap.\ndef snaplogic_final():\n    return None"
+                    }
+                },
+                "view_serial": 101
+            }
+        }
+    }
+}

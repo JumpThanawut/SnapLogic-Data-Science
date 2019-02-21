@@ -179,7 +179,7 @@
                 },
                 "info": {
                     "label": {
-                        "value": "Read Diabetes Dataset"
+                        "value": "Read Diabetes Train Set"
                     },
                     "notes": {
                         "value": null

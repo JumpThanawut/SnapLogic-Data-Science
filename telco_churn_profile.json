@@ -1,0 +1,326 @@
+[
+  {
+    "customerID" : {
+      "popular" : "9995-HOTOH",
+      "uniqueValues" : 7043,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "9995-HOTOH" : 1,
+        "9993-LHIEB" : 1,
+        "9992-UJOEL" : 1,
+        "9992-RRAMN" : 1,
+        "9987-LUTYD" : 1,
+        "9986-BONCE" : 1,
+        "9985-MWVIX" : 1,
+        "9979-RGMZT" : 1,
+        "9978-HYCIN" : 1,
+        "9975-SKRNR" : 1
+      }
+    },
+    "gender" : {
+      "popular" : "Male",
+      "uniqueValues" : 2,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "Male" : 3555,
+        "Female" : 3488
+      }
+    },
+    "SeniorCitizen" : {
+      "popular" : "0",
+      "uniqueValues" : 2,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "0" : 5901,
+        "1" : 1142
+      }
+    },
+    "Partner" : {
+      "popular" : "No",
+      "uniqueValues" : 2,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "No" : 3641,
+        "Yes" : 3402
+      }
+    },
+    "Dependents" : {
+      "popular" : "No",
+      "uniqueValues" : 2,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "No" : 4933,
+        "Yes" : 2110
+      }
+    },
+    "tenure" : {
+      "mean" : 32.37114865824222632400965497657248,
+      "min" : 0,
+      "max" : 72,
+      "stddev" : 24.55948102309446,
+      "popular" : {
+        "lower" : 0,
+        "upper" : 14.4,
+        "count" : 2371
+      },
+      "uniqueValues" : 73,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : [
+        {
+          "lower" : 0,
+          "upper" : 14.4,
+          "count" : 2371
+        },
+        {
+          "lower" : 14.4,
+          "upper" : 28.8,
+          "count" : 1126
+        },
+        {
+          "lower" : 28.8,
+          "upper" : 43.2,
+          "count" : 989
+        },
+        {
+          "lower" : 43.2,
+          "upper" : 57.6,
+          "count" : 947
+        },
+        {
+          "lower" : 57.6,
+          "upper" : 72.0,
+          "count" : 1610
+        }
+      ]
+    },
+    "PhoneService" : {
+      "popular" : "Yes",
+      "uniqueValues" : 2,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "Yes" : 6361,
+        "No" : 682
+      }
+    },
+    "MultipleLines" : {
+      "popular" : "No",
+      "uniqueValues" : 3,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "No" : 3390,
+        "Yes" : 2971,
+        "No phone service" : 682
+      }
+    },
+    "InternetService" : {
+      "popular" : "Fiber optic",
+      "uniqueValues" : 3,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "Fiber optic" : 3096,
+        "DSL" : 2421,
+        "No" : 1526
+      }
+    },
+    "OnlineSecurity" : {
+      "popular" : "No",
+      "uniqueValues" : 3,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "No" : 3498,
+        "Yes" : 2019,
+        "No internet service" : 1526
+      }
+    },
+    "OnlineBackup" : {
+      "popular" : "No",
+      "uniqueValues" : 3,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "No" : 3088,
+        "Yes" : 2429,
+        "No internet service" : 1526
+      }
+    },
+    "DeviceProtection" : {
+      "popular" : "No",
+      "uniqueValues" : 3,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "No" : 3095,
+        "Yes" : 2422,
+        "No internet service" : 1526
+      }
+    },
+    "TechSupport" : {
+      "popular" : "No",
+      "uniqueValues" : 3,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "No" : 3473,
+        "Yes" : 2044,
+        "No internet service" : 1526
+      }
+    },
+    "StreamingTV" : {
+      "popular" : "No",
+      "uniqueValues" : 3,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "No" : 2810,
+        "Yes" : 2707,
+        "No internet service" : 1526
+      }
+    },
+    "StreamingMovies" : {
+      "popular" : "No",
+      "uniqueValues" : 3,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "No" : 2785,
+        "Yes" : 2732,
+        "No internet service" : 1526
+      }
+    },
+    "Contract" : {
+      "popular" : "Month-to-month",
+      "uniqueValues" : 3,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "Month-to-month" : 3875,
+        "Two year" : 1695,
+        "One year" : 1473
+      }
+    },
+    "PaperlessBilling" : {
+      "popular" : "Yes",
+      "uniqueValues" : 2,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "Yes" : 4171,
+        "No" : 2872
+      }
+    },
+    "PaymentMethod" : {
+      "popular" : "Electronic check",
+      "uniqueValues" : 4,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "Electronic check" : 2365,
+        "Mailed check" : 1612,
+        "Bank transfer (automatic)" : 1544,
+        "Credit card (automatic)" : 1522
+      }
+    },
+    "MonthlyCharges" : {
+      "mean" : 64.76169246059917648729234701121681,
+      "min" : 18.25,
+      "max" : 118.75,
+      "stddev" : 30.09004709767849,
+      "popular" : {
+        "lower" : 78.55,
+        "upper" : 98.65,
+        "count" : 1826
+      },
+      "uniqueValues" : 1585,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : [
+        {
+          "lower" : 18.25,
+          "upper" : 38.35,
+          "count" : 1797
+        },
+        {
+          "lower" : 38.35,
+          "upper" : 58.45,
+          "count" : 1004
+        },
+        {
+          "lower" : 58.45,
+          "upper" : 78.55,
+          "count" : 1364
+        },
+        {
+          "lower" : 78.55,
+          "upper" : 98.65,
+          "count" : 1826
+        },
+        {
+          "lower" : 98.65,
+          "upper" : 118.75,
+          "count" : 1052
+        }
+      ]
+    },
+    "Churn" : {
+      "popular" : "No",
+      "uniqueValues" : 2,
+      "missingValues" : 0,
+      "total" : 7043,
+      "valueDistribution" : {
+        "No" : 5174,
+        "Yes" : 1869
+      }
+    },
+    "TotalCharges" : {
+      "mean" : 2283.300440841865756541524459613197,
+      "min" : 18.8,
+      "max" : 8684.8,
+      "stddev" : 2266.771361883145,
+      "popular" : {
+        "lower" : 18.8,
+        "upper" : 1752.0,
+        "count" : 3937
+      },
+      "uniqueValues" : 6530,
+      "missingValues" : 11,
+      "total" : 7043,
+      "valueDistribution" : [
+        {
+          "lower" : 18.8,
+          "upper" : 1752.0,
+          "count" : 3937
+        },
+        {
+          "lower" : 1752.0,
+          "upper" : 3485.2,
+          "count" : 1179
+        },
+        {
+          "lower" : 3485.2,
+          "upper" : 5218.4,
+          "count" : 866
+        },
+        {
+          "lower" : 5218.4,
+          "upper" : 6951.6,
+          "count" : 705
+        },
+        {
+          "lower" : 6951.6,
+          "upper" : 8684.8,
+          "count" : 345
+        }
+      ]
+    }
+  }
+]
