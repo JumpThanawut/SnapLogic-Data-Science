@@ -2,46 +2,34 @@
     "class_id": "com-snaplogic-pipeline",
     "class_version": 8,
     "link_map": {
-        "link100": {
-            "dst_id": "11111111-1111-1111-1111-000000000001",
+        "link114": {
+            "dst_id": "11111111-1111-1111-1111-000000000000",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000003",
+            "src_view_id": "output0"
+        },
+        "link115": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000004",
+            "src_view_id": "output0"
+        },
+        "link117": {
+            "dst_id": "11111111-1111-1111-1111-000000000005",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000000",
             "src_view_id": "output0"
         },
-        "link106": {
-            "dst_id": "11111111-1111-1111-1111-000000000002",
-            "dst_view_id": "input1",
-            "src_id": "11111111-1111-1111-1111-000000000003",
-            "src_view_id": "output0"
-        },
-        "link107": {
-            "dst_id": "11111111-1111-1111-1111-000000000003",
-            "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000001",
-            "src_view_id": "output0"
-        },
-        "link114": {
+        "link118": {
             "dst_id": "11111111-1111-1111-1111-000000000002",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000005",
             "src_view_id": "output0"
         },
-        "link115": {
-            "dst_id": "11111111-1111-1111-1111-000000000005",
-            "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000006",
-            "src_view_id": "output0"
-        },
-        "link117": {
-            "dst_id": "11111111-1111-1111-1111-000000000007",
-            "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000002",
-            "src_view_id": "output0"
-        },
-        "link118": {
-            "dst_id": "11111111-1111-1111-1111-000000000004",
-            "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000007",
+        "link121": {
+            "dst_id": "11111111-1111-1111-1111-000000000000",
+            "dst_view_id": "input1",
+            "src_id": "11111111-1111-1111-1111-000000000001",
             "src_view_id": "output0"
         }
     },
@@ -67,7 +55,7 @@
             }
         },
         "input": {
-            "11111111-1111-1111-1111-000000000006_input0": {
+            "11111111-1111-1111-1111-000000000004_input0": {
                 "label": {
                     "value": "Filter - input0"
                 },
@@ -77,7 +65,7 @@
             }
         },
         "output": {
-            "11111111-1111-1111-1111-000000000004_output0": {
+            "11111111-1111-1111-1111-000000000002_output0": {
                 "label": {
                     "value": "Prepare Response - output0"
                 },
@@ -128,32 +116,8 @@
         "detail_map": {
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
-                "grid_x_int": 1,
-                "grid_y_int": 3,
-                "index": null,
-                "input": {},
-                "output": {},
-                "recommendation_id": null,
-                "rot_int": 0,
-                "rot_tail_int": 0,
-                "source": ""
-            },
-            "11111111-1111-1111-1111-000000000001": {
-                "error": {},
-                "grid_x_int": 2,
-                "grid_y_int": 3,
-                "index": null,
-                "input": {},
-                "output": {},
-                "recommendation_id": null,
-                "rot_int": 0,
-                "rot_tail_int": 0,
-                "source": ""
-            },
-            "11111111-1111-1111-1111-000000000002": {
-                "error": {},
                 "grid_x_int": 4,
-                "grid_y_int": 2,
+                "grid_y_int": 1,
                 "index": 0,
                 "input": {
                     "input1": {
@@ -168,10 +132,10 @@
                 "rot_tail_int": 0,
                 "source": "iris placeholder"
             },
-            "11111111-1111-1111-1111-000000000003": {
+            "11111111-1111-1111-1111-000000000001": {
                 "error": {},
                 "grid_x_int": 3,
-                "grid_y_int": 3,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -180,10 +144,34 @@
                 "rot_tail_int": 0,
                 "source": "snap catagory"
             },
-            "11111111-1111-1111-1111-000000000004": {
+            "11111111-1111-1111-1111-000000000002": {
                 "error": {},
                 "grid_x_int": 6,
-                "grid_y_int": 2,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000003": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000004": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -194,32 +182,8 @@
             },
             "11111111-1111-1111-1111-000000000005": {
                 "error": {},
-                "grid_x_int": 3,
-                "grid_y_int": 2,
-                "index": null,
-                "input": {},
-                "output": {},
-                "recommendation_id": null,
-                "rot_int": 0,
-                "rot_tail_int": 0,
-                "source": ""
-            },
-            "11111111-1111-1111-1111-000000000006": {
-                "error": {},
-                "grid_x_int": 2,
-                "grid_y_int": 2,
-                "index": null,
-                "input": {},
-                "output": {},
-                "recommendation_id": null,
-                "rot_int": 0,
-                "rot_tail_int": 0,
-                "source": ""
-            },
-            "11111111-1111-1111-1111-000000000007": {
-                "error": {},
                 "grid_x_int": 5,
-                "grid_y_int": 2,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -235,126 +199,9 @@
     },
     "snap_map": {
         "11111111-1111-1111-1111-000000000000": {
-            "class_id": "com-snaplogic-snaps-binary-simpleread",
-            "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000000",
-            "property_map": {
-                "account": {
-                    "account_ref": {
-                        "expression": false,
-                        "value": {}
-                    }
-                },
-                "error": {
-                    "error0": {
-                        "label": {
-                            "value": "error0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    },
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "Read Processed Dataset"
-                    },
-                    "notes": {
-                        "value": null
-                    }
-                },
-                "output": {
-                    "output0": {
-                        "label": {
-                            "value": "output0"
-                        },
-                        "view_type": {
-                            "value": "binary"
-                        }
-                    }
-                },
-                "settings": {
-                    "enableStaging": {
-                        "value": false
-                    },
-                    "executeDuringPreview": {
-                        "value": true
-                    },
-                    "filePath": {
-                        "expression": false,
-                        "value": "telco_churn_processed.json"
-                    },
-                    "preventURLEncoding": {
-                        "value": false
-                    }
-                },
-                "view_serial": 100
-            }
-        },
-        "11111111-1111-1111-1111-000000000001": {
-            "class_id": "com-snaplogic-snaps-transform-jsonparser",
-            "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000001",
-            "property_map": {
-                "error": {
-                    "error0": {
-                        "label": {
-                            "value": "error0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    },
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "JSON Parser"
-                    }
-                },
-                "input": {
-                    "input0": {
-                        "label": {
-                            "value": "input0"
-                        },
-                        "view_type": {
-                            "value": "binary"
-                        }
-                    }
-                },
-                "output": {
-                    "output0": {
-                        "label": {
-                            "value": "output0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "settings": {
-                    "allowNonStandardJson": {
-                        "value": true
-                    },
-                    "arrayElementsAsDocuments": {
-                        "value": true
-                    },
-                    "jsonFilterPath": {
-                        "value": ""
-                    }
-                },
-                "view_serial": 100
-            }
-        },
-        "11111111-1111-1111-1111-000000000002": {
             "class_id": "com-snaplogic-snaps-flow-union",
             "class_version": 2,
-            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "instance_id": "11111111-1111-1111-1111-000000000000",
             "property_map": {
                 "error": {
                     "error0": {
@@ -406,10 +253,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000003": {
-            "class_id": "com-snaplogic-snaps-transform-groupbyn",
+        "11111111-1111-1111-1111-000000000001": {
+            "class_id": "com-snaplogic-snaps-flow-pipeexec",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "instance_id": "11111111-1111-1111-1111-000000000001",
             "property_map": {
                 "error": {
                     "error0": {
@@ -426,22 +273,13 @@
                 },
                 "info": {
                     "label": {
-                        "value": "Group By N"
+                        "value": "Load Dataset"
                     },
                     "notes": {
                         "value": null
                     }
                 },
-                "input": {
-                    "input0": {
-                        "label": {
-                            "value": "input0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
+                "input": {},
                 "output": {
                     "output0": {
                         "label": {
@@ -453,20 +291,52 @@
                     }
                 },
                 "settings": {
-                    "groupSize": {
-                        "value": 0
+                    "execLabel": {
+                        "expression": true,
+                        "value": null
                     },
-                    "targetField": {
-                        "value": "group"
+                    "executable_during_suggest": {
+                        "value": true
+                    },
+                    "loopDocument": {
+                        "expression": true
+                    },
+                    "params": {
+                        "value": [
+                            {
+                                "paramName": {
+                                    "value": null
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": null
+                                }
+                            }
+                        ]
+                    },
+                    "pipeline": {
+                        "expression": false,
+                        "value": "Telco Churn - 9 - Load dataset for viz"
+                    },
+                    "poolSize": {
+                        "expression": false,
+                        "value": 1
+                    },
+                    "reuse": {
+                        "value": false
+                    },
+                    "snaplex": {
+                        "expression": true,
+                        "value": "pipe.plexPath"
                     }
                 },
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000004": {
+        "11111111-1111-1111-1111-000000000002": {
             "class_id": "com-snaplogic-snaps-transform-datatransform",
             "class_version": 4,
-            "instance_id": "11111111-1111-1111-1111-000000000004",
+            "instance_id": "11111111-1111-1111-1111-000000000002",
             "property_map": {
                 "error": {
                     "error0": {
@@ -567,10 +437,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000005": {
+        "11111111-1111-1111-1111-000000000003": {
             "class_id": "com-snaplogic-snaps-transform-datatransform",
             "class_version": 4,
-            "instance_id": "11111111-1111-1111-1111-000000000005",
+            "instance_id": "11111111-1111-1111-1111-000000000003",
             "property_map": {
                 "error": {
                     "error0": {
@@ -671,10 +541,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000006": {
+        "11111111-1111-1111-1111-000000000004": {
             "class_id": "com-snaplogic-snaps-flow-filter",
             "class_version": 2,
-            "instance_id": "11111111-1111-1111-1111-000000000006",
+            "instance_id": "11111111-1111-1111-1111-000000000004",
             "property_map": {
                 "error": {
                     "error0": {
@@ -726,10 +596,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000007": {
+        "11111111-1111-1111-1111-000000000005": {
             "class_id": "com-snaplogic-snaps-mlcore-remotepythonscript",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000007",
+            "instance_id": "11111111-1111-1111-1111-000000000005",
             "property_map": {
                 "account": {
                     "account_ref": {
