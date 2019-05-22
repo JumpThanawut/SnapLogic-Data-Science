@@ -1,0 +1,581 @@
+<!-- SnapLogic Interactive Reporting 4.17 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>SnapLogic</title>
+
+    <style>
+        .dataTables_wrapper {
+          font-family: "Noto Sans";
+          position: relative;
+          clear: both;
+          *zoom: 1;
+          zoom: 1;
+        }
+
+        .snaplogic-title {
+          font-family: "Noto Sans" !important;
+          font-weight: bold !important;
+          color: #616161 !important;
+          font-size: 12px !important;
+        }
+
+        .snaplogic-content {
+          font-family: "Noto Sans" !important;
+          color: "#000000" !important;
+          font-size: 15px !important;
+        }
+
+        table#leaderboard.dataTable tbody tr:hover {
+          background-color: #d0e6ed;
+        }
+
+        .highlight {
+          background-color: #d0e6ed !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/snaplogic-public/bootstrap/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/snaplogic-public/datatables/jquery.dataTables-1.10.19.min.css">
+
+    <script src="https://s3-us-west-2.amazonaws.com/snaplogic-public/jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/snaplogic-public/popper/popper-1.14.3.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/snaplogic-public/bootstrap/bootstrap-4.3.1.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/snaplogic-public/highcharts/highcharts-7.1.1.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/snaplogic-public/highcharts/exporting-7.1.1.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/snaplogic-public/highcharts/export-data-7.1.1.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/snaplogic-public/highcharts/heatmap-7.1.1.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/snaplogic-public/datatables/jquery.dataTables-1.10.19.min.js"></script>
+
+</head>
+
+<body class="bg-light">
+<div style="margin: 10px">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card" style="width: 100%; margin-bottom: 5px; font-size: 12px">
+                <div class="card-body" style="padding: 0.5rem 1.5rem 0rem 1.5rem">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Problem</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_problem"></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Label Field</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_label_field"></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Class</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_class"></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Sample</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_sample"></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Numeric Feature</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_numeric_feature"></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Categorical Feature</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_categorical_feature"></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Engine</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_engine"></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Date</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_date"></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Time</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_time"></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Fold</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_fold"></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Model</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_model"></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="card-title snaplogic-title"><b>Total Time</b></p>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_total_time"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="card" style="width: 100%; margin-bottom: 5px">
+                <div class="card-body" style="padding: 1rem 1.5rem 0.5rem 1.5rem">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h6 class="card-title snaplogic-title">Algorithm</h6>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_algorithm"></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="card-title snaplogic-title">Accuracy</h6>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_accuracy"></p>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="card-title snaplogic-title">AUC</h6>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_auc"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h6 class="card-title snaplogic-title">F1</h6>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_f1"></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="card-title snaplogic-title">Precision</h6>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_precision"></p>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="card-title snaplogic-title">Recall</h6>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_recall"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h6 class="card-title snaplogic-title">Avg Class Error</h6>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_mean_per_class_error"></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="card-title snaplogic-title">RMSE</h6>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_rmse"></p>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="card-title snaplogic-title">MSE</h6>
+                            <p class="card-subtitle snaplogic-content mb-2 text-muted" id="txt_mse"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 100%">
+                <table class="card-body stripe hover nowrap" id="leaderboard" style="padding: 0.25rem 0.5rem 0rem 0.5rem">
+                </table>
+            </div>
+        </div>
+
+        <div class="col-md-8" style="height: 85vh">
+
+            <div id=chart_pie style="float:left; width: 55%; height: 33%"></div>
+            <div id=confusion_matrix style="float:left; width: 45%; height: 33%"></div>
+
+            <div class="col-md-3" id="chart_accuracy" style="float:left; width: 25%; height: 33%"></div>
+
+            <div class="col-md-3" id="chart_auc" style="float:left; width: 25%; height: 33%"></div>
+            <div class="col-md-3" id="chart_f1" style="float:left; width: 25%; height: 33%"></div>
+            <div class="col-md-3" id="chart_precision" style="float:left; width: 25%; height: 33%"></div>
+            <div class="col-md-3" id="chart_recall" style="float:left; width: 25%; height: 33%"></div>
+
+            <div class="col-md-3" id="chart_mean_per_class_error" style="float:left; width: 25%; height: 33%"></div>
+            <div class="col-md-3" id="chart_rmse" style="float:left; width: 25%; height: 33%"></div>
+            <div class="col-md-3" id="chart_mse" style="float:left; width: 25%; height: 33%"></div>
+
+        </div>
+    </div>
+</div>
+<script>
+    function hoverCharts(x) {
+      for (var i = 0; i < chart_list.length; i++) {
+        chart_list[i].series[0].data[x].setState('hover');
+      }
+      leaderboard.rows(x).nodes().to$().addClass('highlight');
+
+    }
+
+    function clearHovers(x) {
+      for (var i = 0; i < chart_list.length; i++) {
+        chart_list[i].series[0].data[x].setState('');
+      }
+      leaderboard.rows(x).nodes().to$().removeClass('highlight');
+    }
+
+    let mouseOutFn = function () {
+      clearHovers(this.x - 1);
+    }
+
+    let mouseOverFn = function () {
+      hoverCharts(this.x - 1)
+    }
+
+    function newBarChart(container, title, data) {
+      var maxY = data.map(x => x[1]).reduce(function (a, b) {
+        return Math.max(a, b);
+      });
+      return Highcharts.chart(container, {
+        credits: {
+          enabled: false
+        },
+        exporting: {
+          enabled: false
+        },
+        chart: {
+          backgroundColor: null,
+          type: 'column'
+        },
+        title: {
+          text: title,
+          style: {
+            fontSize: '14px'
+          }
+        },
+        xAxis: {
+          type: 'category',
+          labels: {
+            style: {
+              fontSize: '10px'
+            }
+          }
+        },
+        yAxis: {
+          min: 0,
+          max: maxY,
+          title: {
+            text: ''
+          },
+          tickInterval: maxY.toPrecision(1) / 10
+        },
+        tooltip: {
+          formatter: function () {
+            return data[this.key - 1][2] + "<br>" + this.y;
+          }
+        },
+        plotOptions: {
+          series: {
+            pointPadding: 0,
+            groupPadding: 0,
+            point: {
+              events: {
+                mouseOver: mouseOverFn,
+                mouseOut: mouseOutFn,
+              }
+            },
+            events: {
+            }
+          },
+          column: {
+            states: {
+              hover: {
+                brightness: 0.3 // darken
+              }
+            }
+          }
+        },
+        series: [{
+          name: title,
+          colorByPoint: true,
+          data: data,
+          showInLegend: false,
+          dataLabels: {
+            enabled: false,
+            rotation: -90,
+            color: '#FFFFFF', //text color
+            align: 'right',
+            format: '{point.y:.2f}', // one decimal
+            y: 10, // 10 pixels down from the top
+            style: {
+              fontSize: '12px'
+            }
+          },
+        }]
+      });
+    }
+
+    function newPieChart(container, data) {
+      return Highcharts.chart(container, {
+        credits: {
+          enabled: false
+        },
+        exporting: {
+          enabled: false
+        },
+        chart: {
+          backgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false,
+          type: 'pie'
+        },
+        title: {
+          text: ''
+        },
+        tooltip: {
+          pointFormat: '<b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+          pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+              enabled: true,
+              format: '<b>{point.name}</b>: {point.percentage:.1f}%',
+              style: {
+                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+              }
+            }
+          }
+        },
+        series: [{
+          colorByPoint: true,
+          data: data
+        }]
+      });
+    }
+
+    function newConfusionMatrix(container, data) {
+      var xLabelList = data.Leaderboard[0].Classes;
+      var yLabelList = Object.create(data.Leaderboard[0].Classes).reverse();
+      var confusionMatrixRaw = data.Leaderboard[0]["Confusion Matrix"];
+
+      var confusionMatrix = []
+      for (i = 0; i < xLabelList.length; i++) {
+        for (j = 0; j < xLabelList.length; j++) {
+          var data = [i, j, confusionMatrixRaw[xLabelList.length - 1 - j][i]];
+          confusionMatrix.push(data);
+        }
+      }
+
+      return Highcharts.chart(container, {
+        credits: {
+          enabled: false
+        },
+        exporting: {
+          enabled: false
+        },
+        chart: {
+          type: 'heatmap',
+          backgroundColor: null,
+          marginTop: 30,
+          marginBottom: 15,
+          plotBorderWidth: 1
+        },
+        title: {
+          text: ''
+        },
+        xAxis: {
+          categories: xLabelList,
+          opposite: true
+        },
+        yAxis: {
+          categories: yLabelList,
+          title: null
+        },
+        colorAxis: {
+          min: 0,
+          minColor: '#FFFFFF',
+          maxColor: Highcharts.getOptions().colors[0]
+        },
+        legend: {
+          enabled: false
+        },
+        tooltip: {
+          enabled: false
+        },
+        series: [{
+          data: confusionMatrix,
+          dataLabels: {
+            enabled: true,
+            color: '#000000'
+          }
+        }]
+      });
+    }
+    function precision(a) {
+      if (!isFinite(a)) return 0;
+      var e = 1, p = 0;
+      while (Math.round(a * e) / e !== a) { e *= 10; p++; }
+      return p;
+    }
+
+  </script>
+<script>
+    $(document).ready(function () {
+      var data = {"Title":"","Problem":"Classification","Label Field":"sentiment","Class":2,"Sample":1599488,"Numeric Feature":200,"Categorical Feature":0,"Engine":"H2O","Fold":5,"Model":4,"Date":"2019-05-21","Time":"13:40","Total Time":36038,"Label Distribution":{"negative":799660,"positive":799828},"Leaderboard":[{"Rank":1,"Algorithm":"XGBoost","Accuracy":0.6835181007922535,"AUC":0.779044961425235,"F1":0.7310816202177127,"Precision":0.6356131432778384,"Recall":0.8602974639547503,"Avg Class Error":0.31650046893301176,"RMSE":0.4387547431411344,"MSE":0.1925057246288428,"Classes":["negative","positive"],"Confusion Matrix":[[405189.0,394471.0],[111738.0,688090.0]]},{"Rank":2,"Algorithm":"Generalized Linear Modeling","Accuracy":0.6755836867797695,"AUC":0.7647322525196718,"F1":0.7242082347413649,"Precision":0.6298591799301817,"Recall":0.8518031376746,"Avg Class Error":0.324434824129711,"RMSE":0.44530251741184723,"MSE":0.1982943320133285,"Classes":["negative","positive"],"Confusion Matrix":[[399292.0,400368.0],[118532.0,681296.0]]},{"Rank":3,"Algorithm":"Distributed Random Forest","Accuracy":0.6598030119638284,"AUC":0.755372534145,"F1":0.7202237629922129,"Precision":0.6116452287031465,"Recall":0.875672019484189,"Avg Class Error":0.34021966391921155,"RMSE":0.4547747221349765,"MSE":0.20682004789294506,"Classes":["negative","positive"],"Confusion Matrix":[[354960.0,444700.0],[99441.0,700387.0]]},{"Rank":4,"Algorithm":"Distributed Random Forest","Accuracy":0.6236114306578104,"AUC":0.7148464936931153,"F1":0.7047385222629672,"Precision":0.5798129510685225,"Recall":0.8982806303355222,"Avg Class Error":0.3764174218704802,"RMSE":0.48246046360661027,"MSE":0.2327680989435053,"Classes":["negative","positive"],"Confusion Matrix":[[278989.0,520671.0],[81358.0,718470.0]]}]};
+
+      document.title = data.Title.length != 0 ? data.Title : "AutoML Report";
+      document.getElementById("txt_problem").innerText = data.Problem;
+      document.getElementById("txt_label_field").innerText = data["Label Field"];
+      document.getElementById("txt_class").innerText = data.Class;
+      document.getElementById("txt_sample").innerText = data.Sample;
+      document.getElementById("txt_numeric_feature").innerText = data["Numeric Feature"];
+      document.getElementById("txt_categorical_feature").innerText = data["Categorical Feature"];
+      document.getElementById("txt_engine").innerText = data.Engine;
+      document.getElementById("txt_date").innerText = data.Date;
+      document.getElementById("txt_time").innerText = data.Time;
+      document.getElementById("txt_fold").innerText = data.Fold;
+      document.getElementById("txt_model").innerText = data.Model;
+      document.getElementById("txt_total_time").innerText = data["Total Time"] + " secs";
+      document.getElementById("txt_algorithm").innerText = data.Leaderboard[0].Algorithm;
+      document.getElementById("txt_accuracy").innerText = data.Leaderboard[0].Accuracy.toPrecision(4);
+      document.getElementById("txt_auc").innerText = data.Leaderboard[0].AUC.toPrecision(4);
+      document.getElementById("txt_f1").innerText = data.Leaderboard[0].F1.toPrecision(4);
+      document.getElementById("txt_precision").innerText = data.Leaderboard[0].Precision.toPrecision(4);
+      document.getElementById("txt_recall").innerText = data.Leaderboard[0].Recall.toPrecision(4);
+      document.getElementById("txt_mean_per_class_error").innerText = data.Leaderboard[0]["Avg Class Error"].toPrecision(4);
+      document.getElementById("txt_rmse").innerText = data.Leaderboard[0].RMSE.toPrecision(4);
+      document.getElementById("txt_mse").innerText = data.Leaderboard[0].MSE.toPrecision(4);
+
+      Highcharts.setOptions({
+        chart: {
+          style: {
+            fontFamily: 'Noto Sans',
+          }
+        },
+        colors: ['#596059', '#7b667e', '#53647c', '#53717c', '#537c59', '#ae8eb2', '#c0b377', '#9ab190', '#93b2a3', '#93ABB2']
+      });
+
+
+      data_accuracy = []
+      data_auc = []
+      data_f1 = []
+      data_precision = []
+      data_recall = []
+      data_mean_per_class_error = []
+      data_rmse = []
+      data_mse = []
+      for (var i = 0; i < data.Leaderboard.length; i++) {
+        data_accuracy.push([i + 1, parseFloat(data.Leaderboard[i].Accuracy.toPrecision(4)), data.Leaderboard[i].Algorithm]);
+        data_auc.push([i + 1, parseFloat(data.Leaderboard[i].AUC.toPrecision(4)), data.Leaderboard[i].Algorithm]);
+        data_f1.push([i + 1, parseFloat(data.Leaderboard[i].F1.toPrecision(4)), data.Leaderboard[i].Algorithm]);
+        data_precision.push([i + 1, parseFloat(data.Leaderboard[i].Precision.toPrecision(4)), data.Leaderboard[i].Algorithm]);
+        data_recall.push([i + 1, parseFloat(data.Leaderboard[i].Recall.toPrecision(4)), data.Leaderboard[i].Algorithm]);
+        data_mean_per_class_error.push([i + 1, parseFloat(data.Leaderboard[i]["Avg Class Error"].toPrecision(4)), data.Leaderboard[i].Algorithm]);
+        data_rmse.push([i + 1, parseFloat(data.Leaderboard[i].RMSE.toPrecision(4)), data.Leaderboard[i].Algorithm]);
+        data_mse.push([i + 1, parseFloat(data.Leaderboard[i].MSE.toPrecision(4)), data.Leaderboard[i].Algorithm]);
+      }
+
+      chart_accuracy = newBarChart("chart_accuracy", "Accuracy", data_accuracy)
+      chart_auc = newBarChart("chart_auc", "AUC", data_auc)
+      chart_f1 = newBarChart("chart_f1", "F1", data_f1)
+      chart_precision = newBarChart("chart_precision", "Precision", data_precision)
+      chart_recall = newBarChart("chart_recall", "Recall", data_recall)
+      chart_mean_per_class_error = newBarChart("chart_mean_per_class_error", "Avg Class Error", data_mean_per_class_error)
+      chart_rmse = newBarChart("chart_rmse", "RMSE", data_rmse)
+      chart_mse = newBarChart("chart_mse", "MSE", data_mse)
+
+      chart_list = [chart_accuracy, chart_auc, chart_f1, chart_precision, chart_recall, chart_mean_per_class_error, chart_rmse, chart_mse]
+      leaderboard
+
+      var data_class_dist = []
+      Object.entries(data["Label Distribution"]).forEach(function (x) {
+        data_class_dist.push({ name: x[0], y: x[1] });
+      });
+
+      chart_pie = newPieChart("chart_pie", data_class_dist)
+
+      leaderboard = $('#leaderboard').DataTable({
+        dom: 't',
+        data: data.Leaderboard,
+        scrollX: true,
+        ordering: false,
+        columnDefs: [
+          {
+            targets: [0],
+            className: 'dt-body-center'
+          }, {
+            targets: [2],
+            render(v) {
+              return Number(v).toFixed(4)
+            }
+          },
+          {
+            targets: [3],
+            render(v) {
+              return Number(v).toFixed(4)
+            }
+          },
+          {
+            targets: [4],
+            render(v) {
+              return Number(v).toFixed(4)
+            }
+          },
+          {
+            targets: [5],
+            render(v) {
+              return Number(v).toFixed(4)
+            }
+          },
+          {
+            targets: [6],
+            render(v) {
+              return Number(v).toFixed(4)
+            }
+          },
+          {
+            targets: [7],
+            render(v) {
+              return Number(v).toFixed(4)
+            }
+          },
+          {
+            targets: [8],
+            render(v) {
+              return Number(v).toFixed(4)
+            }
+          },
+          {
+            targets: [9],
+            render(v) {
+              return Number(v).toFixed(4)
+            }
+          }],
+        columns: [
+          { data: 'Rank', title: "Rank" },
+          { data: 'Algorithm', title: "Algorithm" },
+          { data: 'Accuracy', title: "Accuracy" },
+          { data: 'AUC', title: "AUC" },
+          { data: 'F1', title: "F1" },
+          { data: 'Precision', title: "Precision" },
+          { data: 'Recall', title: "Recall" },
+          { data: 'Avg Class Error', title: "Avg Class Error" },
+          { data: 'RMSE', title: "RMSE" },
+          { data: 'MSE', title: "MSE" }
+        ]
+      });
+
+      $("table#leaderboard.dataTable").on('mouseover', 'tbody tr', function () {
+        var row = this._DT_RowIndex;
+        hoverCharts(row)
+
+      })
+      $("table#leaderboard.dataTable").on('mouseout', 'tbody tr', function () {
+        var row = this._DT_RowIndex;
+        clearHovers(row)
+      })
+      $("td").addClass('snaplogic-content');
+      $("th").addClass('snaplogic-title');
+
+      Highcharts.setOptions({
+        chart: {
+          style: {
+            fontFamily: 'Noto Sans',
+          }
+        },
+        colors: ['#9ab190']
+      });
+
+
+      var confusion_matrix = newConfusionMatrix("confusion_matrix", data);
+    });
+
+  </script>
+
+</body>
+
+</html>
